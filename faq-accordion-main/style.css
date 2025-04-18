@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+}
+
+.blk1 {
+  /* width: 100vw; */
+  height: auto;
+  /* object-fit: cover; */
+  overflow: hidden;
+  position: relative;
+}
+.blk1 img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hope {
+  /* padding-bottom: 20%; */
+  /* margin-bottom: 50%; */
+  background: #f9eeff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: absolute;
+  width: 50%;
+  /* height: auto; */
+  padding: 3%;
+  background: white;
+  top: 18%;
+
+  /* bottom: 10%; */
+  /* margin-left: 25%; */
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(102, 36, 138, 0.242);
+  /* margin-bottom: 20%; */
+}
+
+.headingText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: hsl(292, 42%, 14%);
+  /* justify-content: space-between; */
+}
+
+.headingText p {
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+  border-bottom: 0.5px solid #cfcfcf;
+}
+
+#q1,
+#q2,
+#q3,
+#q4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: hsl(292, 42%, 14%);
+  font-weight: 600;
+}
+#q1:hover,
+#q2:hover,
+#q3:hover,
+#q4:hover {
+  color: #ad28eb;
+  cursor: pointer; /* Optional: Changes cursor to indicate interactivity */
+}
+
+#ans4,
+#ans3,
+#ans2,
+#ans1 {
+  margin-bottom: 2rem;
+  /* min-height: 70px; */
+  background: #fefefe;
+  display: block;
+  color: #505050;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+#ans4,
+#ans3,
+#ans2 {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  /* For mobile devices */
+  /* .blk1 {
+      height: 50%;
+    } */
+  .blk1 img {
+    /* width: 100vw; */
+    height: 28vh;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+  }
+  .hope {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* top: -70vh; */
+  }
+  .content {
+    width: 80%;
+    /* margin-left: 25%; */
+    padding: 2%;
+    top: 15%;
+    /*left: 50%;  Push from the left */
+    /* transform: translateX(-20%); */
+    position: absolute;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  .blk1 img {
+    /* width: 100vw; */
+    height: 28vh;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hope {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* top: -70vh; */
+  }
+
+  .content {
+    width: 80%;
+    position: absolute;
+
+    /* margin-left: 10%;*/
+    top: 10%;
+    padding: 2%;
+  }
+}
